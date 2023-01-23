@@ -21,7 +21,7 @@ function autoFill()
 
 
         let user=JSON.parse(localStorage.getItem('currentUser'));
-        document.querySelector('.data-name').innerText=user.name;
+        
         document.querySelector('#name').value=user.name;
         document.querySelector('#email').value=user.email;
         if(user.dob!=null)

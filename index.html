@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Logis Bootstrap Template - Index</title>
+  <title>Travel Buddy</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -28,10 +28,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/toast.css">
-  <script src="./assets/js/toast.js"></script>
-  <script src="./js/MyToast.js"></script>
-  <script src="./js/RenderAuth.js" defer></script>
 
   <!-- =======================================================
   * Template Name: Logis - v1.3.0
@@ -39,46 +35,51 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <link rel="stylesheet" href="./assets/css/toast.css">
+  <script src="./assets/js/toast.js"></script>
+  <script src="./js/MyToast.js"></script>
+  <script src="./js/RenderAuth.js" defer></script>
+  <script src="indexRender.js" defer></script>
+  <script src="./services/servicedata.js"></script>
 </head>
 
 <body>
 
- <!-- ======= Header ======= -->
- <header id="header" class="header d-flex align-items-center fixed-top">
-  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-    <a href="index.html" class="logo d-flex align-items-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1>Travel Buddy</h1>
-    </a>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Travel Buddy</h1>
+      </a>
 
-    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <!-- <li><a href="pricing.html">Pricing</a></li> -->
-     
-        <li id="signOut" class="dropdown d-none  "><a href="#"><span></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-          <ul>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="#">Sign Out</a></li>
-          </ul>
-        </li>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+       
+          <li id="signOut" class="dropdown d-none  "><a href="#"><span></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="#">Sign Out</a></li>
+            </ul>
+          </li>
 
-        
-        <li id="signIn"><a class="get-a-quote" href="signin.html">Sign In</a></li>
-        
-      </ul>
-    </nav><!-- .navbar -->
+          
+          <li id="signIn"><a class="get-a-quote" href="signin.html">Sign In</a></li>
+          
+        </ul>
+      </nav><!-- .navbar -->
 
-  </div>
-</header><!-- End Header -->
-<!-- End Header -->
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
@@ -86,8 +87,7 @@
       <div class="row gy-4 d-flex justify-content-between">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h2 data-aos="fade-up">Best Partner For Your Travel Needs</h2>
-           <h4 data-aos="fade-up" data-aos-delay="100">Welcome to Travel Buddy</h4>
-           <p data-aos="fade-up" data-aos-delay="100"> Let us take the stress out of planning your next adventure. From flights to accommodations, we've got you covered. Trust us to make your travel experience seamless and enjoyable. Book now and discover the world with ease.</p>
+          <p data-aos="fade-up" data-aos-delay="100">Make your journies hassle free. Let us take care of your journies requirements, while you can sit back and enjoy your vacation. We have a huge network of transport, hotel and restaurent partners around the world.</p>
 
           <!--<form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
             <input type="text" class="form-control" placeholder="ZIP code or CitY">
@@ -98,7 +98,7 @@
 
             <div class="col-lg-3 col-6">
               <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="32561" data-purecounter-duration="3" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="32543" data-purecounter-duration="1" class="purecounter"></span>
                 <div class="icon flex-shrink-0"><i class="fa-solid fa-xl fa-people-group"></i></div>
                 <p>Clients</p>
                 
@@ -107,7 +107,7 @@
 
             <div class="col-lg-3 col-6">
               <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="1521" data-purecounter-duration="2" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="240" data-purecounter-duration="1" class="purecounter"></span>
                 <div class="icon flex-shrink-0"><i class="fa-solid fa-xl fa-hotel"></i></div>
                 <p>Hotel Partners</p>
               </div>
@@ -115,7 +115,7 @@
 
             <div class="col-lg-3 col-6">
               <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="2" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="34" data-purecounter-duration="1" class="purecounter"></span>
                 <div class="icon flex-shrink-0"><i class="fa-solid fa-xl fa-plane"></i></div>
                 <p>Travel Partners</p>
               </div>
@@ -123,7 +123,7 @@
 
             <div class="col-lg-3 col-6">
               <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="871" data-purecounter-duration="2" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
                 <div class="icon flex-shrink-0"><i class="fa-solid fa-xl fa-map-location-dot"></i></div>
                 <p>Locations</p>
               </div>
@@ -133,7 +133,7 @@
         </div>
 
         <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-          <img src="assets/img/hero-img.svg" class="img-fluid mb-3 mb-lg-0" alt="">
+          <img src="assets/img/traveling.png" class="img-fluid mb-3 mb-lg-0" alt="">
         </div>
 
       </div>
@@ -146,36 +146,9 @@
     <section id="featured-services" class="featured-services">
       <div class="container">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-cab"></i></div>
-            <div>
-              <h4 class="title">Transport</h4>
-              <p class="description">Experience seamless transportation with our Travel. From booking to tracking, our transport service ensures a hassle-free and reliable journey for all your travel needs.</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-building"></i></div>
-            <div>
-              <h4 class="title">Hotels</h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-map-location-dot"></i></div>
-            <div>
-              <h4 class="title">Tours</h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
+        <div class="row gy-4" id="service-container">
+          <!-- TO BE RENDERED IN indexRender-->
+      
         </div>
 
       </div>

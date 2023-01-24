@@ -37,11 +37,13 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <link rel="stylesheet" href="./assets/css/toast.css">
+  <script src="./js/AdminAuthRequired.js"></script>
   <script src="./assets/js/toast.js"></script>
   <script src="./js/MyToast.js"></script>
-  <script src="./services.js" defer></script>
+  <!-- <script src="./services.js" defer></script> -->
   <script src="./js/RenderAuth.js" defer></script>
   <script src="adminDisplayUsers.js " defer></script>
+  <script src="./js/AuthRequired.js"></script>
 </head>
 
 <body>
@@ -68,6 +70,8 @@
           <li id="signOut" class="dropdown d-none"><a href="#"><span></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="profile.html">Profile</a></li>
+              <li><a href="adminDisplayUsers.html"  id="p1" class="pri">Users Data</a></li>
+              <li><a href="adiminAddServices.html"  id="p2" class="pri">Services Data</a></li>
               <li><a href="#">Sign Out</a></li>
             </ul>
           </li>
@@ -121,9 +125,9 @@
         <div class="row gy-2" id="users-container">
             <table class="justify-content-center" id="users-table">
                 <tr>
-                <th class="text-center">Name</th>
-                <th class="text-center">Email</th>
-                <th class="text-center">Password</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
                 </tr>
             </table>
 

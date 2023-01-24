@@ -21,10 +21,11 @@ function renderNavBar()
             signOutButton.querySelector('span').style.color="white";
             signOutButton.classList.remove('d-none');
             if(user.email != localStorage.getItem("adminEmail") || user.password != localStorage.getItem("adminPassword")){
-                let priv=document.body.querySelector("#p1");
+                /*let priv=document.body.querySelector("#p1");
                 priv.classList.add('d-none');
                 let priv1=document.body.querySelector("#p2");
-                priv1.classList.add('d-none');
+                priv1.classList.add('d-none');*/
+                document.querySelectorAll('.pri').forEach(ele=>ele.classList.add('d-none'));
             }
         }
 
@@ -33,7 +34,7 @@ function renderNavBar()
 }
 function logout()
 {   
-    ToastDisplay(`Bye ${JSON.parse(localStorage.getItem('currentUser')).name} :(`,'bg-success');
+    ToastDisplay(`Bye ${JSON.parse(localStorage.getItem('currentUser')).name}`,'bg-success');
 
     localStorage.removeItem('currentUser');
     

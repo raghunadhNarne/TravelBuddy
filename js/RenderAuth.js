@@ -20,6 +20,12 @@ function renderNavBar()
             signOutButton.querySelector('span').style.fontWeight="bolder";
             signOutButton.querySelector('span').style.color="white";
             signOutButton.classList.remove('d-none');
+            if(user.email != localStorage.getItem("adminEmail") || user.password != localStorage.getItem("adminPassword")){
+                let priv=document.body.querySelector("#p1");
+                priv.classList.add('d-none');
+                let priv1=document.body.querySelector("#p2");
+                priv1.classList.add('d-none');
+            }
         }
 
 
